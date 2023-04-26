@@ -1,0 +1,28 @@
+Topic: Java
+Program for Reversing a string
+
+import java.io.*;
+import java.util.Scanner;
+
+class GFG {
+	public static void main (String[] args) {
+	
+		String str= "Vicky", nstr="";
+		char ch;
+	
+	System.out.print("Original word: ");
+	System.out.println("Vicky"); //Example word
+	
+	for (int i=0; i<str.length(); i++)
+	{
+		ch= str.charAt(i); //extracts each character
+		nstr= ch+nstr; //adds each character in front of the existing string
+	}
+	System.out.println("Reversed word: "+ nstr);
+	}
+}
+
+Output:
+
+Original word: Vicky
+Reversed word: ykciV
